@@ -1,0 +1,44 @@
+Estrutura da Interface Streamlit
+Tela Inicial:
+
+Título do aplicativo.
+Breve descrição do que o aplicativo faz.
+Campo de entrada para o usuário escrever a vaga para a qual está se preparando.
+Botão para iniciar a simulação da entrevista.
+Simulação da Entrevista:
+
+A interface deve exibir uma pergunta por vez.
+Campo de texto para o usuário digitar a resposta.
+Botão para submeter a resposta e receber feedback.
+Feedback:
+
+Após a submissão da resposta, o GPT-4 gera um feedback considerando a qualidade técnica e as soft skills demonstradas.
+O feedback é exibido na tela.
+Botão para continuar para a próxima pergunta.
+Conclusão da Entrevista:
+
+Após 5 perguntas, a entrevista é concluída.
+A IA gera uma nota geral, considerando as respostas técnicas e soft skills.
+Exibição de um resumo com pontos fortes e áreas para melhoria.
+Lógica de Programação com GPT-4
+Início da Entrevista:
+
+Quando o usuário insere a vaga e inicia a entrevista, o GPT-4 gera perguntas relevantes para o campo especificado.
+Geração de Perguntas:
+
+As perguntas podem variar entre técnicas e comportamentais para avaliar um espectro amplo de habilidades.
+Utilize um contador para limitar o número de perguntas a 5.
+Feedback e Avaliação:
+
+Para cada resposta do usuário, o GPT-4 analisa e fornece feedback imediato.
+O feedback deve abordar a qualidade da resposta e a presença de habilidades relevantes (comunicação, resolução de problemas, etc.).
+Nota Final:
+
+Após a quinta pergunta, o GPT-4 calcula uma nota geral baseada nas respostas.
+Pode-se utilizar uma combinação de análise de conteúdo e avaliação de soft skills para determinar a nota.
+Considerações Técnicas
+Garanta que o GPT-4 esteja bem integrado para gerar perguntas e feedbacks de forma coerente e relevante.
+Considere a privacidade dos usuários e assegure que as respostas sejam tratadas de forma confidencial.
+Teste o sistema com uma variedade de vagas para garantir que as perguntas e feedbacks sejam apropriados para diferentes campos.
+Implementação no Streamlit
+Para implementar este aplicativo no Streamlit, você precisará de conhecimento em Python e acesso à API do GPT-4. O Streamlit facilita a criação de interfaces interativas, enquanto o GPT-4 pode ser usado para gerar perguntas e feedbacks.
